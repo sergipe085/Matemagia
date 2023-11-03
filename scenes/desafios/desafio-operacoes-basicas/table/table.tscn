@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://mvogjxeo0kd5"]
+
+[ext_resource type="Texture2D" uid="uid://d30bco2m1edra" path="res://scenes/desafios/desafio-operacoes-basicas/table/table.png" id="1_37jv8"]
+[ext_resource type="Texture2D" uid="uid://bnw1tvo1jx2rb" path="res://scenes/desafios/desafio-operacoes-basicas/table/key.png" id="2_qpt7g"]
+
+[node name="table" type="Node2D"]
+
+[node name="table_sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_37jv8")
+
+[node name="key_sprite" type="Sprite2D" parent="."]
+position = Vector2(6.75257e-09, -18)
+rotation = -3.13811
+texture = ExtResource("2_qpt7g")

@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://chh5yb737keju" path="res://resources/tileset.tres" id="1_7qgjg"]
 [ext_resource type="PackedScene" uid="uid://b673ry5evui4j" path="res://scenes/player/player.tscn" id="2_yfynn"]
 
-[node name="main" type="Node"]
+[node name="main2" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.25, 0.25)

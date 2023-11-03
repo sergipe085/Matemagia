@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxjwns1q4vm6k"]
+[gd_scene load_steps=4 format=3 uid="uid://bxjwns1q4vm6k"]
 
 [ext_resource type="TileSet" uid="uid://chh5yb737keju" path="res://resources/tileset.tres" id="1_cso6t"]
 [ext_resource type="PackedScene" uid="uid://b673ry5evui4j" path="res://scenes/player/player.tscn" id="2_aerg6"]
+[ext_resource type="PackedScene" uid="uid://c7jgs013x65fc" path="res://scenes/desafios/desafio-test.tscn" id="3_m55kw"]
 
 [node name="main" type="Node"]
 
@@ -12,3 +13,6 @@ layer_0/tile_data = PackedInt32Array(-65535, 0, 0, -131071, 0, 0, -196607, 0, 0,
 
 [node name="player" parent="." instance=ExtResource("2_aerg6")]
 position = Vector2(15, -19)
+
+[node name="desafio-test" parent="." instance=ExtResource("3_m55kw")]
+position = Vector2(-71, -26)

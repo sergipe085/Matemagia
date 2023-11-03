@@ -1,19 +1,43 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7jgs013x65fc"]
+[gd_scene load_steps=9 format=3 uid="uid://c7jgs013x65fc"]
 
 [ext_resource type="Script" path="res://scenes/desafios/desafio-test.gd" id="1_liymc"]
 [ext_resource type="PackedScene" uid="uid://mvogjxeo0kd5" path="res://scenes/desafios/desafio-operacoes-basicas/table/table.tscn" id="2_b4q42"]
+[ext_resource type="FontFile" uid="uid://dt6pu3irug3j5" path="res://assets/font/Poco.ttf" id="3_id1al"]
+[ext_resource type="PackedScene" uid="uid://dcema61y5i22q" path="res://scenes/desafios/desafio-operacoes-basicas/options/option.tscn" id="4_3d8pt"]
+[ext_resource type="Texture2D" uid="uid://c3tvvjyenwthj" path="res://scenes/desafios/desafio-operacoes-basicas/options/option-red.png" id="5_gwqv5"]
+[ext_resource type="Texture2D" uid="uid://b0d5us0db63a3" path="res://scenes/desafios/desafio-operacoes-basicas/options/option-blue.png" id="6_5jx1o"]
+[ext_resource type="Texture2D" uid="uid://cd81unxg3l4g" path="res://scenes/desafios/desafio-operacoes-basicas/options/option-green.png" id="7_qclax"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cyv8k"]
+font = ExtResource("3_id1al")
+font_size = 128
+outline_size = 48
+outline_color = Color(0, 0, 0, 1)
 
 [node name="desafio-test" type="Node2D"]
 script = ExtResource("1_liymc")
 
 [node name="table" parent="." instance=ExtResource("2_b4q42")]
 
-[node name="Label" type="Label" parent="."]
-offset_left = -26.0
-offset_top = -42.0
-offset_right = 75.0
-offset_bottom = -16.0
-scale = Vector2(0.5, 0.5)
+[node name="operation_display_label" type="Label" parent="."]
+offset_left = -46.0
+offset_top = -48.0
+offset_right = 874.0
+offset_bottom = 109.0
+scale = Vector2(0.1, 0.1)
 text = "(2  * 3) + 5 = ?"
+label_settings = SubResource("LabelSettings_cyv8k")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="option" parent="." instance=ExtResource("4_3d8pt")]
+position = Vector2(-20, 10)
+texture = ExtResource("5_gwqv5")
+
+[node name="option2" parent="." instance=ExtResource("4_3d8pt")]
+position = Vector2(0, 10)
+texture = ExtResource("6_5jx1o")
+
+[node name="option3" parent="." instance=ExtResource("4_3d8pt")]
+position = Vector2(20, 10)
+texture = ExtResource("7_qclax")

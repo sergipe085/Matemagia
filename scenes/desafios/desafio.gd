@@ -8,4 +8,5 @@ func nome():
 	pass 
 	
 func emit_ganhou_desafio():
+	print("GANHOU DESAFIO");
 	emit_signal("ganhou_desafio");

@@ -14,8 +14,9 @@ font_size = 128
 outline_size = 48
 outline_color = Color(0, 0, 0, 1)
 
-[node name="desafio-test" type="Node2D"]
+[node name="desafio-test" type="Node2D" node_paths=PackedStringArray("option_test")]
 script = ExtResource("1_liymc")
+option_test = [NodePath("option"), NodePath("option2"), NodePath("option3")]
 
 [node name="table" parent="." instance=ExtResource("2_b4q42")]
 
@@ -33,11 +34,14 @@ vertical_alignment = 1
 [node name="option" parent="." instance=ExtResource("4_3d8pt")]
 position = Vector2(-20, 10)
 texture = ExtResource("5_gwqv5")
+value = 10
 
 [node name="option2" parent="." instance=ExtResource("4_3d8pt")]
 position = Vector2(0, 10)
 texture = ExtResource("6_5jx1o")
+value = 2
 
 [node name="option3" parent="." instance=ExtResource("4_3d8pt")]
 position = Vector2(20, 10)
 texture = ExtResource("7_qclax")
+value = 25
